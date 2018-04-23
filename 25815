@@ -1,0 +1,31 @@
+#pragma config(Sensor, in1,    lightSensor,    sensorReflection)
+#pragma config(Sensor, in2,    Potent,         sensorPotentiometer)
+#pragma config(Sensor, in3,    lineSLeft,      sensorLineFollower)
+#pragma config(Sensor, in4,    lineSmiddle,    sensorReflection)
+#pragma config(Sensor, in5,    lineSRight,     sensorLineFollower)
+#pragma config(Sensor, dgtl1,  QuadEncRight,   sensorQuadEncoder)
+#pragma config(Sensor, dgtl3,  QuadEncLeft,    sensorQuadEncoder)
+#pragma config(Sensor, dgtl5,  sonarSensor,    sensorSONAR_cm)
+#pragma config(Sensor, dgtl11, touch,          sensorTouch)
+#pragma config(Motor,  port2,           rightMotor,    tmotorServoContinuousRotation, openLoop, reversed)
+#pragma config(Motor,  port3,           leftMotor,     tmotorServoContinuousRotation, openLoop)
+#pragma config(Motor,  port4,           armMotor,      tmotorServoContinuousRotation, openLoop)
+#pragma config(Motor,  port6,           clawMotor,     tmotorServoContinuousRotation, openLoop)
+
+#include "../motor_functions.c";
+void armDown(){
+	motor[armMotor] = 60;
+	wait10Msec(1000);
+}
+void clawOpen(){
+	motor[clawMotor] = 60;
+}
+void clawClose(){
+	motor[clawMotor] = -60;
+}
+
+
+task main(){
+	armDown();
+
+}
