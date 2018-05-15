@@ -1,6 +1,4 @@
-
-
-#include "./functions/motor_functions.c";
+#include "../motor_functions.c";
 
 int globalCounter = 0;
 task fail_safe()
@@ -18,7 +16,7 @@ task fail_safe()
 }
 
 
-task followLine()
+task verkefni6()
 {
 
 	drive_line();

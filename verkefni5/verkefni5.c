@@ -12,7 +12,7 @@
 #pragma config(Motor,  port4,           armMotor,      tmotorServoContinuousRotation, openLoop)
 #pragma config(Motor,  port6,           clawMotor,     tmotorServoContinuousRotation, openLoop)
 
-#include "./functions/motor_functions.c";
+#include "./motor_functions.c";
 
 /*----------------------------------------------------------------------------------------------------*\
 |*                               - Verkefni 5 Bergur og Kristberg -                                   *|
@@ -67,23 +67,3 @@ task main()
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//sdfsdf
