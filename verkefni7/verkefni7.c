@@ -11,7 +11,6 @@
 #pragma config(Motor,  port3,           leftMotor,     tmotorServoContinuousRotation, openLoop)
 #pragma config(Motor,  port4,           armMotor,      tmotorServoContinuousRotation, openLoop)
 #pragma config(Motor,  port6,           clawMotor,     tmotorServoContinuousRotation, openLoop)
-
 #include "mytasks.c";
 
 
@@ -28,12 +27,12 @@ task main()
 			StopTask(verkefni4);
 			StopTask(verkefni5);
 			StopTask(verkefni6);
-			StartTask(verkefni2_hluti1);
+			StartTask(verkefni2_hluti2);
 		}
 
 
 
-		//	//hluti 2 i verkefni 2
+		//hluti 2 i verkefni 2
 		if(vexRT[Btn8L]==1){
 			StopTask(verkefni2_hluti1);
 			StopTask(verkefni2_hluti3);
@@ -46,7 +45,7 @@ task main()
 
 
 
-		//	//hluti 3 i verkefni 2
+		//hluti 3 i verkefni 2
 		if(vexRT[Btn8U]==1){
 			StopTask(verkefni2_hluti1);
 			StopTask(verkefni2_hluti2);
@@ -59,7 +58,7 @@ task main()
 
 
 
-		//	//Verkefni 3
+		//Verkefni 3
 		if(vexRT[Btn8R]==1){
 			StopTask(verkefni2_hluti1);
 			StopTask(verkefni2_hluti2);
@@ -94,9 +93,9 @@ task main()
 			StopTask(verkefni4);
 			StopTask(verkefni6);
 			StartTask(verkefni5);
-
-
 		}
+		
+		
 		//Verkefni 6
 		if(vexRT[Btn7U]==1){
 			StopTask(verkefni2_hluti1);
