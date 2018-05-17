@@ -101,14 +101,14 @@ int multiplier = (bf)?(1):(-1);
 	}
 }
 void drive_forward(int i){
-	motor[rightMotor] = 127;
-	motor[leftMotor]  = 127;
+	motor[rightMotor] = 90;
+	motor[leftMotor]  = 90;
 	wait1Msec(DRIVETIME*i);
-
 }
+
 void drive_backwards(int i){
-	motor[rightMotor] = -127;
-	motor[leftMotor]  = -127;
+	motor[rightMotor] = -90;
+	motor[leftMotor]  = -90;
 	wait1Msec(DRIVETIME*i);
 
 }
